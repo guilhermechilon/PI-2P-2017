@@ -1,6 +1,6 @@
 ### PI-2
 
-## Site de perdas para a universidade
+## Site de perdas para a universidade (html/css/php/javascript)
 
 Quando alguém perde algum objeto, é um desepero total para ir atrás das pessoas responsáveis pelos "achados e perdidos" da faculdade. O nosso site ajudariam essas pessoas a encontrar mais facilmente suas perdas.
 
