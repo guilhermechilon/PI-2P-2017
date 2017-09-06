@@ -11,17 +11,17 @@
 
 	 CRONOGRAMA
 	
-		 SETEMBRO
+	 SETEMBRO
 		
-       Estrutura html, css e js do site;
+          Estrutura html, css e js do site;
 
-        Perfil do usuário.
+          Perfil do usuário.
 		
 		
-		 OUTUBRO
+	 OUTUBRO
 		
-	     Usuário postar.
+	  Usuário postar.
 
-		 NOVEMBRO
+	 NOVEMBRO
 		
-	    	Usuário comenta o post.
+	  Usuário comenta o post.
