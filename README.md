@@ -14,30 +14,25 @@ algum objeto no campus da faculdade, entraria no site e se alguém que perdeu fe
 post comunicando a perda, o usuário visualizava todos os dados do objeto perdido
 (data, hora, local e foto) e se comunicava com o usuário para realizar a entrega.</p>
 
-<blackquote>
-<p>CRONOGRAMA</p>
-	
-<p>SETEMBRO</p>
-</blackquote>
 
-<ol>
+> <strong>CRONOGRAMA</strong>
+	
+> <strong>SETEMBRO</strong>
+
+<ul>
 <li>Estrutura html, css e js do site;</li>
 
 <li>Perfil do usuário.</li>
-</ol>
+</ul>
 
-<blackquote>	
-<p>OUTUBRO</p>
-</blackquote>
+> <strong>OUTUBRO</strong>
 
-<ol>
+<ul>
 <li>Usuário postar.</li>
-</ol>
+</ul>
 
-<blackquote>
-<p>NOVEMBRO</p>
-</blackquote>
+> <strong>NOVEMBRO</strong>
 
-<ol>
+<ul>
 <li>Usuário comenta o post.</li>
-</ol>
+</ul>
