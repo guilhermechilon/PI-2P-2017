@@ -27,11 +27,11 @@ post comunicando a perda, o usuário visualizava todos os dados do objeto perdid
 > <strong>OUTUBRO</strong>
 
 <ul>
-<li>Usuário postar.</li>
+<li>Usuário pode postar itens perdidos.</li>
 </ul>
 
 > <strong>NOVEMBRO</strong>
 
 <ul>
-<li>Usuário comenta o post.</li>
+<li>Usuário comenta o post e entra em contato.</li>
 </ul>
