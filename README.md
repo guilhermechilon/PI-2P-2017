@@ -1,6 +1,6 @@
-#### Get Back!
+### Get Back!
 
-### Site de perdas para a universidade
+#### Site de perdas para a universidade
 	
 <p>Quando alguém perde algum objeto, é um desepero total para ir atrás das pessoas 
 responsáveis pelos "achados e perdidos" da faculdade. Porém fica um pouco 
