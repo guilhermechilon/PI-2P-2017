@@ -20,9 +20,8 @@ post comunicando a perda, o usuário visualizava todos os dados do objeto perdid
 > <strong>SETEMBRO</strong>
 
 <ul>
-<li>Estrutura html, css e js do site;</li>
-
-<li>Perfil do usuário.</li>
+<li>Main page (estrutura post);</li>
+<li>Cadastro, login e perfil do usuário.</li>
 </ul>
 
 > <strong>OUTUBRO</strong>
