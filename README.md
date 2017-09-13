@@ -15,7 +15,7 @@ post comunicando a perda, o usuário visualizava todos os dados do objeto perdid
 (data, hora, local e foto) e se comunicava com o usuário para realizar a entrega.</p>
 
 
-> <strong>CRONOGRAMA</strong>
+> CRONOGRAMA
 	
 > <strong>SETEMBRO</strong>
 
