@@ -15,18 +15,18 @@ post comunicando a perda, o usuário visualizava todos os dados do objeto perdid
 (data, hora, local e foto) e se comunicava com o usuário para realizar a entrega.</p>
 
 
-> CRONOGRAMA
+> __CRONOGRAMA__
 	
-> <strong>SETEMBRO</strong>
+> __SETEMBRO__
 
 
 * Main page (estrutura post);
 * Cadastro, login e perfil do usuário.
 
-> <strong>OUTUBRO</strong>
+> __OUTUBRO__
 
 * Usuário pode postar itens perdidos.
 
-> <strong>NOVEMBRO</strong>
+> __NOVEMBRO__
 
 * Usuário comenta o post e entra em contato.
