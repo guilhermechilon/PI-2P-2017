@@ -1,4 +1,4 @@
-#### PI-2
+#### Get Back!
 
 ### Site de perdas para a universidade
 	
@@ -19,19 +19,14 @@ post comunicando a perda, o usuário visualizava todos os dados do objeto perdid
 	
 > <strong>SETEMBRO</strong>
 
-<ul>
-<li>Main page (estrutura post);</li>
-<li>Cadastro, login e perfil do usuário.</li>
-</ul>
+
+* Main page (estrutura post);
+* Cadastro, login e perfil do usuário.
 
 > <strong>OUTUBRO</strong>
 
-<ul>
-<li>Usuário pode postar itens perdidos.</li>
-</ul>
+* Usuário pode postar itens perdidos.
 
 > <strong>NOVEMBRO</strong>
 
-<ul>
-<li>Usuário comenta o post e entra em contato.</li>
-</ul>
+* Usuário comenta o post e entra em contato.
