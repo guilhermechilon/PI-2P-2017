@@ -17,17 +17,18 @@ post comunicando a perda, o usuário visualizava todos os dados do objeto perdid
 
 
 > __CRONOGRAMA__
-	
-> __SETEMBRO__
 
+____________________________________________
+> __SETEMBRO__
 
 * Main page (estrutura post);
 * Cadastro, login e perfil do usuário.
-
+_____________________________________________
 > __OUTUBRO__
 
 * Usuário pode postar itens perdidos.
-
+_____________________________________________
 > __NOVEMBRO__
 
 * Usuário comenta o post e entra em contato.
+___________________________________________________________________________________________________________________________________
