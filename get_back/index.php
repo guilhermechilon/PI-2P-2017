@@ -1,3 +1,13 @@
+<?php
+session_start();
+$id_usuario=$_SESSION['id_usuario'];
+	if($id_usuario !=""){
+		//echo "Usuario logado";
+	}else{
+		echo "Nao logado";
+		header("location:login.php");
+	}
+?>
 <!DOCTYPE html>
 <html>
 	<head>
