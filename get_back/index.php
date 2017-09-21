@@ -29,7 +29,7 @@
                                     <div class="panel panel-dark">
                                         <div class="panel-body">
                                             <div class="timeline-item-header">
-                                                <a href="">
+                                                <a href="#" style="text-decoration: none;color: black;">
                                                 	<img src="assets/images/avatar3.png" alt="" style="border-radius: 25px;">
                                                 	<strong><?php echo "Christopher Carlton"; ?></strong><br>
                                                 </a>
