@@ -28,8 +28,10 @@ _____________________________________________
 > __OUTUBRO__
 
 * Usuário pode postar itens perdidos.
+* Estrutura "Meus Posts".
 _____________________________________________
 > __NOVEMBRO__
 
 * Usuário comenta o post e entra em contato.
+* Estrutura "Meus Posts Comentados".
 ___________________________________________________________________________________________________________________________________
