@@ -11,7 +11,7 @@
 	$row = mysqli_fetch_assoc($sql);
 
     if(empty($row)){
-        $_SESSION['loginErro'] = "Usuario não encontrado!";
+        $_SESSION['loginErro'] = "Usuário não encontrado!";
         header("Location: login1.php");
     }
     elseif (isset($row)) {
@@ -19,7 +19,7 @@
         header("Location: index.php");
     }
     else{
-        $_SESSION['loginErro'] = "Email ou Senha invalido!";
+        $_SESSION['loginErro'] = "Email ou Senha inválido!";
         header("Location: login1.php");
     }
 
