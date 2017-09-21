@@ -20,7 +20,7 @@
 		        	<div class="form-group">
 		          		<input type="text" class="form-control" placeholder="Pesquisar">
 		        	</div>
-		        	<button type="submit" class="btn btn-default">O</button>
+		        	<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
 		      	</form>
 		      	<ul class="nav navbar-nav">
 		        	<li><a href="meus_posts.php">Meus Posts<span class="sr-only">(current)</span></a></li>
