@@ -1,4 +1,4 @@
-<header>
+<header style="position: fixed;z-index: 999;width: 100%;">
 	<nav class="navbar navbar-default">
 	  	<div class="container-fluid">
 	    	<!-- Brand and toggle get grouped for better mobile display -->
@@ -32,7 +32,7 @@
 		          		<ul class="dropdown-menu">
 			            	<li><a href="#">Perfil</a></li>
 				            <li role="separator" class="divider"></li>
-				            <li><a href="logout.php">Logout</a></li>
+				            <li><a href="logout.php">Sair</a></li>
 		          		</ul>
 		        	</li>
 		      	</ul>
