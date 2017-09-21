@@ -60,7 +60,6 @@ CREATE TABLE `usuario` (
   `email` varchar(65) CHARACTER SET latin1 NOT NULL,
   `senha` varchar(35) CHARACTER SET latin1 NOT NULL,
   `nome` varchar(65) CHARACTER SET latin1 NOT NULL,
-  `sexo` varchar(15) CHARACTER SET latin1 NOT NULL,
   `curso` varchar(25) CHARACTER SET latin1 NOT NULL,
   `foto_perfil` varchar(35) CHARACTER SET latin1 NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
