@@ -27,12 +27,15 @@
                                 <input name="senha" type="password" class="form-control" placeholder="Senha" required>
                             </div>
                             <button type="submit" class="btn btn-primary" style="background-color: #dc0909;border-color: #dc0909;">Entrar</button>
-                            <a href="cadastro.php" style="float: right;"><input class="btn btn-primary" style="background-color: #dc0909;border-color: #dc0909;" value="Cadastrar"></a>
+                            <a href="cadastro.php" style="float: right;"><input type="button" class="btn btn-primary" style="background-color: #dc0909;border-color: #dc0909;" value="Cadastrar"></a>
                         </form>
                     </div>
                 </div>
             </div>
         </section>
 
+        <?php include("footer.php"); ?>
+
+        <?php include("script.php"); ?>
     </body>
 </html>
