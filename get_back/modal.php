@@ -1,5 +1,9 @@
+<?php session_start(); 
+	$id = $_SESSION['id'];
+
+?>
 <div class="col-md-4 col-sm-8">
-    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div id="myModal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header" style="height: 25px;border: none;">
