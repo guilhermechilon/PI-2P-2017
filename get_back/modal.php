@@ -21,8 +21,10 @@
 	                            	<div class="row">
 		                            	<div class="col-md-12 col-sm-12">
 			                            	<br>
-			                                <img src="assets/images/avatar3.png" style="width: 45px;border-radius: 25px;">
-			                                <strong>Christopher Carlton</strong>
+			                            	<a href="#" style="text-decoration: none;color: black;">
+				                                <img src="assets/images/avatar3.png" style="width: 45px;border-radius: 25px;">
+				                                <strong>Christopher Carlton</strong>
+			                            	</a>
 			                                <small>5 hours ago</small>
 			                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -33,8 +35,10 @@
 			                        <h4>Comentários</h4><br>
 			                        <div class="row">
 			                        	<div class="col-md-12 col-sm-12">
-			                        		<img src="assets/images/avatar3.png" style="width: 35px;border-radius: 25px;">
-			                        		<strong>Juao Pedrin</strong>
+			                        		<a href="#" style="text-decoration: none;color: black;">
+				                        		<img src="assets/images/avatar3.png" style="width: 35px;border-radius: 25px;">
+				                        		<strong>Juao Pedrin</strong>
+				                        	</a>
 			                        		<p style="font-size: 0.9em;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			                        		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 			                        		<br>
@@ -42,8 +46,10 @@
 			                        </div>
 			                        <div class="row">
 			                        	<div class="col-md-12 col-sm-12">
-			                        		<img src="assets/images/avatar3.png" style="width: 35px;border-radius: 25px;">
-			                        		<strong>Juao Pedrin</strong>
+			                        		<a href="#" style="text-decoration: none;color: black;">
+				                        		<img src="assets/images/avatar3.png" style="width: 35px;border-radius: 25px;">
+				                        		<strong>Juao Pedrin</strong>
+				                        	</a>
 			                        		<p style="font-size: 0.9em;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			                        		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 			                        		<br>
@@ -51,8 +57,10 @@
 			                        </div>
 			                        <div class="row">
 			                        	<div class="col-md-12 col-sm-12">
-			                        		<img src="assets/images/avatar3.png" style="width: 35px;border-radius: 25px;">
-			                        		<strong>Juao Pedrin</strong>
+			                        		<a href="#" style="text-decoration: none;color: black;">
+				                        		<img src="assets/images/avatar3.png" style="width: 35px;border-radius: 25px;">
+				                        		<strong>Juao Pedrin</strong>
+				                        	</a>
 			                        		<p style="font-size: 0.9em;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			                        		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 			                        		<br>
@@ -60,8 +68,10 @@
 			                        </div>
 			                        <div class="row">
 			                        	<div class="col-md-12 col-sm-12">
-			                        		<img src="assets/images/avatar3.png" style="width: 35px;border-radius: 25px;">
-			                        		<strong>Juao Pedrin</strong>
+			                        		<a href="#" style="text-decoration: none;color: black;">
+				                        		<img src="assets/images/avatar3.png" style="width: 35px;border-radius: 25px;">
+				                        		<strong>Juao Pedrin</strong>
+				                        	</a>
 			                        		<p style="font-size: 0.9em;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			                        		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 			                        		<br>
@@ -69,8 +79,10 @@
 			                        </div>
 			                        <div class="row">
 			                        	<div class="col-md-12 col-sm-12">
-			                        		<img src="assets/images/avatar3.png" style="width: 35px;border-radius: 25px;">
-			                        		<strong>Juao Pedrin</strong>
+			                        		<a href="#" style="text-decoration: none;color: black;">
+				                        		<img src="assets/images/avatar3.png" style="width: 35px;border-radius: 25px;">
+				                        		<strong>Juao Pedrin</strong>
+				                        	</a>
 			                        		<p style="font-size: 0.9em;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			                        		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 			                        		<br>
