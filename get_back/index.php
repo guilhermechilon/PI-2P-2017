@@ -112,7 +112,7 @@
 
 		<br><br><br>
 
-		<a href="#gotop" style="float: right;margin-right: 25px;margin-bottom: 5px;"><i class="fa fa-chevron-up"></i></a>
+		<a href="#gotop" style="margin-left:25px;margin-bottom:5px;"><i class="fa fa-chevron-up"></i></a>
 
 		<?php include("footer.php"); ?>
 		
