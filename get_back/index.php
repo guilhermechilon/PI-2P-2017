@@ -88,7 +88,7 @@
                     	</div>
 					</div>
 
-					<div class="col-md-2 col-sm-2" style="position: fixed;float: right;margin-left: 75%;height: 100%;z-index: 998;">
+					<div class="col-md-3 col-sm-2" style="position: fixed;float: right;margin-left: 75%;height: 100%;z-index: 998;">
 						<br><br>
 						<a href="#" style="text-decoration: none;color: black;">
                         	<img src="assets/images/avatar3.png" alt="" style="border-radius: 25px;">
