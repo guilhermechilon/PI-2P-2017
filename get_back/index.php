@@ -27,11 +27,11 @@
 						<div class="col-md-10 col-sm-12">
 							<form method="POST" action="publicar.php" enctype="multipart/form-data">
 								<div class="form-group">
-									<textarea class="form-control" id="exampleTextarea" rows="4" style="resize: none;" required></textarea>
+									<textarea class="form-control" id="exampleTextarea" rows="4" style="resize: none;border-color: #dc0909;" required></textarea>
 								</div>
-								<div class="form-group">
-								    <input type="file" class="form-control-file" name="img">
-								</div>
+								<label class="btn btn-default btn-file">
+								    Carregar Imagem<input type="file" class="form-control-file" name="img" style="display: none;">
+								</label><br>
 								<button type="submit" class="btn btn-primary" style="background-color: #dc0909;border-color: #dc0909;float: right;">Publicar</button>
 							</form>
 						</div>
