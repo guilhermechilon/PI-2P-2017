@@ -99,11 +99,11 @@
                         <br><br>
                         <h4>Últimas Atividades</h4>
                         <ul style="text-decoration: none;list-style-type: none;">
-                        	<li><a href="#">Post do Gil das Pamonhas</a></li><br>
-                        	<li><a href="#">Post do Gil das Pamonhas</a></li><br>
-                        	<li><a href="#">Post do Gil das Pamonhas</a></li><br>
-                        	<li><a href="#">Post do Gil das Pamonhas</a></li><br>
-                        	<li><a href="#">Post do Gil das Pamonhas</a></li><br>
+                        	<li><a href="#">Post do <?php echo "Gil das Pamonhas" ?></a></li><br>
+				<li><a href="#">Post do <?php echo "Gil das Pamonhas" ?></a></li><br>
+				<li><a href="#">Post do <?php echo "Gil das Pamonhas" ?></a></li><br>
+				<li><a href="#">Post do <?php echo "Gil das Pamonhas" ?></a></li><br>
+				<li><a href="#">Post do <?php echo "Gil das Pamonhas" ?></a></li><br>
                         </ul>
 					</div>
 				</div>
