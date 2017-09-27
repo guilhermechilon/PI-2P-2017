@@ -13,7 +13,7 @@
         <?php include("head.php"); ?>
     </head>
 
-    <body style="background-image: url(img/wall2.jpg);background-repeat: no-repeat;">
+    <body style="background-image: url(img/wall.jpg);background-size: 100%;background-repeat: no-repeat;">
         <section>
             <div class="container">
                 <div class="row">
@@ -39,8 +39,8 @@
                                 <input name="curso" type="text" class="form-control" placeholder="Curso">                      
                             </div>
                             <div class="form-group">
-                                <label>Foto de Perfil</label>
-                                <input type="file" name="img" required/>
+                                <label class="btn btn-default btn-file">
+                                    Carregar Imagem<input type="file" class="form-control-file" name="img" style="display: none;" required>
                             </div>
 
                             <button type="submit" class="btn btn-primary" style="background-color: #dc0909;border-color: #dc0909;">Cadastrar</button>

@@ -3,8 +3,8 @@
     <head>
         <?php include("head.php"); ?>
     </head>
-    <body style="background-image: url(img/wall2.jpg);background-repeat: no-repeat;">
-        <section style="">
+    <body style="background-image: url(img/wall.jpg);background-size: 100%;background-repeat: no-repeat;">
+        <section style="height: 100%;">
             <div class="container">
                 <div class="row">
                     <br><br><br><br><br><br><br>
@@ -37,5 +37,12 @@
         <?php include("footer.php"); ?>
 
         <?php include("script.php"); ?>
+
+        <style>
+            .footer{
+                position:absolute;
+                bottom:0;
+            }
+        </style>
     </body>
 </html>

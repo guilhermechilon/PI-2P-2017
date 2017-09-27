@@ -3,7 +3,7 @@
         <?php include("head.php"); ?>
     </head>
 
-    <body style="background-image: url(img/wall2.jpg);background-repeat: no-repeat;">
+    <body style="background-image: url(img/wall.jpg);background-size: 100%;background-repeat: no-repeat;">
         <section>
             <div class="container">
                 <div class="row">
@@ -30,12 +30,12 @@
                                 
                             </div>
                             <div class="form-group">
-                                <label>Foto de Perfil</label>
-                                <input type="file" name="img" required/>
+                                <label class="btn btn-default btn-file">
+                                    Carregar Imagem<input type="file" class="form-control-file" name="img" style="display: none;" required>
                             </div>
 
-                            <a href="login.php"><input type="button" class="btn btn-primary" style="background-color: #dc0909;border-color: #dc0909;" value="Já possuo uma conta"></a>                            
-                            <button type="submit" class="btn btn-primary" style="background-color: #dc0909;border-color: #dc0909;float: right;">Entrar</button>
+                            <button type="submit" class="btn btn-primary" style="background-color: #dc0909;border-color: #dc0909;">Cadastrar</button>
+                            <a href="login.php"><input type="button" class="btn btn-primary" style="background-color: #dc0909;border-color: #dc0909;float: right;" value="Já possuo uma conta"></a>
                         </form>
                     </div>
                     <div class="col-md-6 col-md-offset-2 col-sm-12" style="font-family: 'Anton', sans-serif;">
