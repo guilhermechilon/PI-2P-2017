@@ -27,7 +27,7 @@
 						<div class="col-md-10 col-sm-12">
 							<form method="POST" action="publicar.php" enctype="multipart/form-data">
 								<div class="form-group">
-									<textarea class="form-control" id="exampleTextarea" rows="4" style="resize: none;border-color: #dc0909;"  placeholder="Digite aqui . . ." required></textarea>
+									<textarea class="form-control" name="text" rows="4" style="resize: none;border-color: #dc0909;"  placeholder="Digite aqui . . ." required></textarea>
 								</div>
 								<label class="btn btn-default btn-file">
 								    Carregar Imagem<input type="file" class="form-control-file" name="img" style="display: none;">
