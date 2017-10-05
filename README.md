@@ -1,7 +1,7 @@
 ___________________________________________________________________________________________________________________________________
 ### Get Back!
 ___________________________________________________________________________________________________________________________________
-#### Site de perdas para a universidade
+#### Site de achados e perdidos
 	
 Quando alguém perde algum objeto, é um desepero total para ir atrás das 
 pessoas responsáveis pelos "achados e perdidos" da faculdade. Porém fica
