@@ -29,7 +29,7 @@
 	              <br><br>
 	                  
 	                  <div class="col-md-4 col-sm-6" style="text-align: center;">
-	                    <a href="" data-toggle="modal" data-target="#myModal" style="z-index: 1;position: relative;"><img src="img/<?php echo $profile->foto_perfil ?>" style="width: 300px;height: 300px;text-align: center;"></a>
+	                    <a href="" data-toggle="modal" data-target="#myModal" style="z-index: 1;position: relative;"><img src="img_user/<?php echo $profile->foto_perfil ?>" style="width: 300px;height: 300px;text-align: center;"></a>
 	                    <a href="" data-toggle="modal" data-target="#myModal" style="text-decoration: none;"><div style="height: 20px;margin: 0 auto;width: 300px;background-color: black;position: relative;opacity: 0.5;z-index: 999;margin-top: -20px;font-size: 1em;"><p style="color: white;"><strong>Editar foto</strong></p></div></a>
 	                  </div>
 	                  <div class="col-md-8 col-sm-12" style="text-align:center;">
