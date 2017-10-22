@@ -21,7 +21,7 @@
 	date_default_timezone_set('America/Sao_Paulo');
 	$data = date('Y-m-d H:i:s');
 
-	$sql = "INSERT INTO postagem(id_usuario, post, img_post, data_post) VALUES ('$id_usuario','$text','$novo_nome','$data')";
+	$sql = "INSERT INTO postagem(id_usuario, post, img_post, data_post,) VALUES ('$id_usuario','$text','$novo_nome','$data')";
 	$result = mysqli_query($conn,$sql);
 
 	header("Location:index.php")

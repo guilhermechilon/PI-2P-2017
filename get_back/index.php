@@ -36,31 +36,30 @@
 							</form>
 						</div>
 						<div class="col-md-1 col-sm-1"></div>
-
+						<br><br><br><br><br><br><br><br><br><br>
 						<?php 
 							$sql = mysqli_query($conn,"SELECT DATE_FORMAT(p.data_post, '%d/%m/%Y %H:%i:%s') as data_post,p.id_post,p.id_usuario,p.post,p.img_post,u.nome,u.foto_perfil,u.nome,u.foto_perfil FROM postagem as p INNER JOIN usuario as u ON u.id_usuario = p.id_usuario ORDER BY p.data_post DESC LIMIT 10");
 						?>
-						<br><br><br><br><br><br><br><br><br><br>
 						<div class="col-md-8 col-md-offset-3 col-sm-12 col-sm-offset-2">
 							<div class="profile-timeline">
 	                            <ul class="list-unstyled">
 	                            	<?php while ($row = mysqli_fetch_object($sql)) { ?>
 	                            		
 		                                <li class="timeline-item">
-		                                    <div class="panel panel-dark">
+		                                    <div class="panel panel-dark" style="border-radius: 20px;">
 		                                        <div class="panel-body">
 		                                            <div class="timeline-item-header">
 		                                                <a href="visit_perfil.php?id=<?php echo $row->id_usuario; ?>" style="text-decoration: none;color: black;">
 		                                                	<img src="img_user/<?php echo $row->foto_perfil; ?>" alt="" style="border-radius: 25px;width: 50px;height: 50px;">
 		                                                	&nbsp;&nbsp;&nbsp;<strong><?php echo $row->nome; ?></strong><br>
 		                                                </a>
-		                                                <small><?php echo $row->data_post; ?></small>
+		                                                <small><i><?php echo $row->data_post; ?></i></small>
 		                                            </div>
 		                                            <br>
 		                                            <p><?php echo $row->post; ?></p>
 		                                            <br>
 		                                            <div class="timeline-item-post" style="margin: 0;text-align: center;">
-	                                            		<a href="" data-toggle="modal" data-target=".bs-example-modal-lg" data-id="1" onclick="deletaDado(<?php echo $row->id_post; ?>)">
+	                                            		<a href="" data-toggle="modal" data-id="<?php echo $row->id_post; ?>" data-target=".bs-example-modal-lg" data-id="1" class="open-AddBookDialog">
 	                                                		<img src="img_post/<?php echo $row->img_post; ?>" style="width: 428.75px;height: 428.75px;">
 	                                            		</a>
 		                                            </div>
@@ -97,12 +96,20 @@
 			</div>
 		</section>
 		<a href="#gotop" style="margin-right:25px;width: 50px;float: right;z-index: 9999;"><i class="glyphicon glyphicon-chevron-up"></i></a>
+		<style type="text/css">.footer{color: black !important;margin-top: 8px;padding: 5px;}</style>
 
 		<?php include("footer.php"); ?>
 
 		<?php include("modal.php"); ?>
 
 		<?php include("script.php"); ?>
+
+		<script type="text/javascript">
+			$(document).on("click", ".open-AddBookDialog", function () {
+			 var myBookId = $(this).data('id');
+			 $(".modal-body #bookId").val( myBookId );
+			});
+		</script>
 		
 	</body>
 
