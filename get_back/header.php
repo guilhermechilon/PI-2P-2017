@@ -22,7 +22,7 @@
 	      			<img alt="logo" src="#">
 	      		</a>
 	    	</div>
-	    	<?php $minifoto = mysqli_query($conn,"SELECT u.foto_perfil FROM usuario as u WHERE id_usuario = $id_usuario"); 
+	    	<?php $minifoto = mysqli_query($conn,"SELECT * FROM usuario as u WHERE id_usuario = $id_usuario"); 
 	    	$fotomini = mysqli_fetch_object($minifoto); ?>
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
