@@ -44,7 +44,6 @@
 		                                            </div>
 		                                            <br>
 		                                            <p><?php echo $row->post; ?></p>
-		                                            <br>
 		                                            <div class="timeline-item-post" style="margin: 0;text-align: center;">
 	                                            		<a href="" data-toggle="modal" data-target="#myModal<?php echo $row->id_post; ?>" class="open-AddBookDialog">
 	                                                		<img src="img_post/<?php echo $row->img_post; ?>" style="width: 428.75px;height: 428.75px;">
