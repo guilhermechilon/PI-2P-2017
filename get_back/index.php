@@ -1,14 +1,4 @@
-<?php session_start();
-
-	//verifica se existe dados na sessao
-	if(isset($_SESSION['id_usuario'])) {
-	  $id_usuario = $_SESSION['id_usuario'];
-	} else {
-	  header("Location: login.php");
-	}
-	include("conexao.php");
-	error_reporting(0);
-?>
+<?php include_once("seguranca.php"); ?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -22,7 +12,7 @@
 			<br><br><br>
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-md-9 col-sm-10" style="background-image: url(img/wall.jpg);background-attachment: fixed;background-position: center;background-repeat: no-repeat;background-size: cover;height: 100%;">
+					<div class="col-md-9 col-sm-9" style="background-image: url(img/wall.jpg);background-attachment: fixed;background-position: center;background-repeat: no-repeat;background-size: cover;height: 100%;">
 						<br><br>
 						<div class="col-md-8 col-md-offset-3 col-sm-8 col-sm-offset-3">
 							<form method="POST" action="publicar.php" enctype="multipart/form-data">
@@ -40,7 +30,7 @@
 						<?php 
 							$sql = mysqli_query($conn,"SELECT DATE_FORMAT(p.data_post, '%d/%m/%Y %H:%i:%s') as data_post,p.id_post,p.id_usuario,p.post,p.img_post,u.nome,u.foto_perfil,u.foto_perfil FROM postagem as p INNER JOIN usuario as u ON u.id_usuario = p.id_usuario ORDER BY p.data_post DESC LIMIT 10");
 						?>
-						<div class="col-md-8 col-md-offset-3 col-sm-12 col-sm-offset-2">
+						<div class="col-md-8 col-md-offset-3 col-sm-10 col-sm-offset-2">
 							<div class="profile-timeline">
 	                            <ul class="list-unstyled">
 	                            	<?php while ($row = mysqli_fetch_object($sql)) { ?>
@@ -72,15 +62,9 @@
 										                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 										            </div>
 										            <div class="modal-body">
-										            	<?php 
-										            		$id_post2 = $row->id_post;
-															$sqlpost = mysqli_query($conn,"SELECT DATE_FORMAT(p.data_post, '%d/%m/%Y %H:%i:%s') as data_post,p.id_post,p.id_usuario,p.post,p.img_post,u.nome,u.foto_perfil FROM postagem as p 
-																INNER JOIN usuario as u ON u.id_usuario = p.id_usuario WHERE p.id_post = $id_post2 LIMIT 1");
-															$rowpost = mysqli_fetch_object($sqlpost);
-														?>
 										                <div class="row">
 										                    <div class="col-md-8 col-sm-12">
-										                    	<img src="img_post/<?php echo $rowpost->img_post; ?>" style="height: 500px;width: 100%;">
+										                    	<img src="img_post/<?php echo $row->img_post; ?>" style="height: 500px;width: 100%;">
 										                    	<br>
 										                    </div>
 										                    <div class="col-md-4 col-sm-12">
@@ -89,33 +73,44 @@
 										                            	<div class="row">
 											                            	<div class="col-md-12 col-sm-12">
 												                            	<br>
-												                            	<a href="visit_perfil.php?id=<?php echo $rowpost->id_usuario ?>" style="text-decoration: none;color: black;">
-													                                <img src="img_user/<?php echo $rowpost->foto_perfil; ?>" style="border-radius: 25px;width: 45px;height: 45px;">
-													                                &nbsp;<strong><?php echo $rowpost->nome; ?></strong>
+												                            	<a href="visit_perfil.php?id=<?php echo $row->id_usuario ?>" style="text-decoration: none;color: black;">
+													                                <img src="img_user/<?php echo $row->foto_perfil; ?>" style="border-radius: 25px;width: 45px;height: 45px;">
+													                                &nbsp;<strong><?php echo $row->nome; ?></strong>
 												                            	</a><br>
-												                                <small><i><?php echo $rowpost->data_post; ?></i></small><br>
-												                                <p><?php echo $rowpost->post; ?></p>
+												                                <small><i><?php echo $row->data_post; ?></i></small><br>
+												                                <p><?php echo $row->post; ?></p>
 												                            </div>
 												                        </div>
 												                        <?php 
+												                        $id_post2 = $row->id_post;
 																			$sqlcoment = mysqli_query($conn,"SELECT DATE_FORMAT(c.data_coment, '%d/%m/%Y %H:%i:%s') as data_coment,c.comentario,u.nome,u.id_usuario,u.foto_perfil FROM comentario as c
 																				INNER JOIN usuario as u ON u.id_usuario = c.id_usuario
 																				WHERE c.id_post = $id_post2 LIMIT 1");
+																			$numcoment = mysqli_num_rows($sqlcoment);
 																			$rowcoment = mysqli_fetch_object($sqlcoment);
 																		?>
 												                        <h4>Comentários</h4><br>
-												                        <div class="row">
-												                        	<div class="col-md-12 col-sm-12">
-												                        		<a href="visit_perfil.php?id=<?php echo $rowcoment->id_usuario ?>" style="text-decoration: none;color: black;">
-													                        		<img src="img_user/<?php echo $rowcoment->foto_perfil; ?>" style="width: 35px;border-radius: 25px;">
-													                        		<strong><?php echo $rowcoment->nome; ?></strong>
-													                        	</a>
-													                        	<br>
-												                                <small><i><?php echo $rowcoment->data_coment; ?></i></small><br>
-												                        		<p style="font-size: 0.9em;"><?php echo $rowcoment->comentario; ?></p>
-												                        		<br>
-												                        	</div>
-												                        </div>
+												                        <?php if ($numcoment != 0) { ?>
+												                        	<div class="row">
+													                        	<div class="col-md-12 col-sm-12">
+													                        		<a href="visit_perfil.php?id=<?php echo $rowcoment->id_usuario ?>" style="text-decoration: none;color: black;">
+														                        		<img src="img_user/<?php echo $rowcoment->foto_perfil; ?>" style="width: 35px;border-radius: 25px;">
+														                        		<strong><?php echo $rowcoment->nome; ?></strong>
+														                        	</a>
+														                        	<br>
+													                                <small><i><?php echo $rowcoment->data_coment; ?></i></small><br>
+													                        		<p style="font-size: 0.9em;"><?php echo $rowcoment->comentario; ?></p>
+													                        		<br>
+													                        	</div>
+													                        </div>
+												                        <?php }else{ ?>
+												                        	<div class="row">
+													                        	<div class="col-md-12 col-sm-12">
+													                        		<code style="background-color: transparent;"><i>Nenhum comentário feito . . .</i></code>
+													                        		<br>
+													                        	</div>
+													                        </div>
+												                        <?php } ?>
 												                    </div>
 												                </div>
 											                    <div class="row" style="position:fixed;z-index:999;overflow:hidden;margin-top: -20px;">
@@ -138,10 +133,10 @@
                     	</div>
 					</div>
 
-					<div class="col-md-3 col-sm-2" style="position: fixed;float: right;margin-left: 75%;height: 80%;z-index: 998;">
+					<div class="col-md-3 col-sm-3" style="position: fixed;float: right;margin-left: 75%;height: 80%;z-index: 998;padding-left: 25px;">
 						<br><br>
 						<a href="perfil.php" style="text-decoration: none;color: black;">
-                        	<img src="img_user/<?php echo $fotomini->foto_perfil ?>" style="width: 70px;height: 70px;border-radius: 25px;">
+                        	<img src="img_user/<?php echo $fotomini->foto_perfil ?>" style="width: 70px;height: 70px;border-radius: 100%;">
                         	<strong><?php echo $fotomini->nome; ?></strong>
                         </a>
                         <br><br>

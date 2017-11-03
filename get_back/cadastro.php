@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <?php include("head.php"); ?>

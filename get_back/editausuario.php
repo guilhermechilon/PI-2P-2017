@@ -1,11 +1,4 @@
-<?php session_start();
-	//verifica se existe dados na sessao
-if(isset($_SESSION['id_usuario'])) {
-  $id_usuario = $_SESSION['id_usuario'];
-} else {
-  exit('Você não tem permissão para acessar essa página!');
-}
-    include("conexao.php");
+<?php include_once("seguranca.php"); 
 
 	$nome = isset($_POST['nome']) == true ? $_POST['nome']:"";
 	$curso = isset($_POST['curso']) == true ? $_POST['curso']:"";

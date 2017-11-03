@@ -1,15 +1,10 @@
-<?php session_start();
-
-	//verifica se existe dados na sessao
-	if(isset($_SESSION['id_usuario'])) {
-	  $id_usuario = $_SESSION['id_usuario'];
-	  $id = $_GET['id'];
-	} else {
-	  header("Location: login.php");
-	}
-	include("conexao.php");
-	error_reporting(0);
+<?php include_once("seguranca.php"); 
+      $id = $_GET['id'];
+      if ($id == $id_usuario) {
+        header("Location: perfil.php");
+      }
 ?>
+	  
 <!DOCTYPE html>
 <html>
 	<head>
@@ -53,7 +48,7 @@
                         </div>
                         <br><br>
                         <div class="col-md-12 col-sm-10" style="float: left !important;">
-                        	<a href="chat.php" class="btn btn-primary" style="background-color: #dc0909;border-color: #dc0909;text-align: center;border-radius: 15px;">Enviar Mensagem</a>
+                        	<a href="chat.php?usuario=<?php echo $id; ?>" class="btn btn-primary" onclick="window.open(this.href,'galeria','width=680,height=630'); return false;" style="background-color: #dc0909;border-color: #dc0909;text-align: center;border-radius: 15px;">Enviar Mensagem</a>
                         </div>
                     </div>
 	            </div>
@@ -62,37 +57,13 @@
 
 		<?php include("footer.php"); ?>
 
-		<div class="col-md-4">
-          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  <h4 class="modal-title">Trocar Foto de Perfil</h4>
-                </div>
-                <div class="modal-body">
-                  <form action="editafotoperfil.php" method="POST" enctype="multipart/form-data" class="form-horizontal">
-                    <div class="form-group">
-                        <label class="btn btn-default btn-file">
-                            Carregar Imagem<input type="file" class="form-control-file" name="imagem" style="display: none;" required>
-                    </div>
-                    <br>
-                    <div class="form-group" style="text-align: center;">
-                      <button type="submit" class="btn btn-default" style="width:50%;border-color: #2A2A2A;border-radius:15px;">Salvar</button>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
 		<?php include("script.php"); ?>
 		
 		<style>
 			.footer{
 				position:absolute;
 				bottom:0;
+        color: black !important;
 			}
 		</style>
 	</body>

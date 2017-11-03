@@ -1,14 +1,4 @@
-<?php session_start();
-
-	//verifica se existe dados na sessao
-	if(isset($_SESSION['id_usuario'])) {
-	  $id_usuario = $_SESSION['id_usuario'];
-	} else {
-	  header("Location: login.php");
-	}
-	include("conexao.php");
-	error_reporting(0);
-?>
+<?php include_once("seguranca.php"); ?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -88,7 +78,7 @@
                 <div class="modal-body">
                   <form action="editafotoperfil.php" method="POST" enctype="multipart/form-data" class="form-horizontal">
                     <div class="form-group">
-                        <label class="btn btn-default btn-file">
+                        <label class="btn btn-default btn-file" style="margin-left: 10px;">
                             Carregar Imagem<input type="file" class="form-control-file" name="imagem" style="display: none;" required>
                     </div>
                     <br>
@@ -103,12 +93,10 @@
         </div>
 
 		<?php include("script.php"); ?>
+
+		<?php include("footer.php"); ?>
 		
-		<style>
-			.footer{
-				position:absolute;
-				bottom:0;
-			}
-		</style>
+		<style type="text/css">.footer{color: black !important;margin-top: 8px;padding: 5px;position:absolute !important;bottom:0 !important;}</style>
+		
 	</body>
 </html>
