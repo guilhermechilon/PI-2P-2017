@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 03-Nov-2017 às 10:54
+-- Generation Time: 03-Nov-2017 às 11:03
 -- Versão do servidor: 5.7.14
 -- PHP Version: 5.6.25
 
@@ -134,7 +134,7 @@ CREATE TABLE `postagem` (
 INSERT INTO `postagem` (`id_post`, `id_usuario`, `post`, `img_post`, `data_post`) VALUES
 (1, 1, 'asdwasd', '0de5c4bb76323ae88d7b59aba5aa0a98.jpg', '2017-09-25 08:54:12'),
 (2, 4, 'asdaw', '0de5c4bb76323ae88d7b59aba5aa0a98.jpg', '2017-09-27 08:54:13'),
-(6, 3, 'xvasdsac', 'cd3fc411a410a3661e24f372bcb117c0.jpg', '2017-10-06 19:56:23');
+(6, 3, 'xvasdsac', '0de5c4bb76323ae88d7b59aba5aa0a98.jpg', '2017-10-06 19:56:23');
 
 -- --------------------------------------------------------
 
