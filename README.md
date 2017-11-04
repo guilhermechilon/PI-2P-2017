@@ -35,3 +35,13 @@ _____________________________________________
 * Usuário comenta o post e entra em contato.
 * Estrutura "Meus Posts Comentados".
 ___________________________________________________________________________________________________________________________________
+>__INTEGRANTES__
+
+* Guilherme Chilon
+* Guilherme Pelet
+* Higor Rogério
+* Jefferson Nogueira
+* Paulo Sérgio
+
+	>__Professor__
+	* Filipe Guelber
