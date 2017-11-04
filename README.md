@@ -43,5 +43,4 @@ ________________________________________________________________________________
 * Jefferson Nogueira
 * Paulo Sérgio
 
-	>__Professor__
-	* Filipe Guelber
+		* Filipe Guelber
