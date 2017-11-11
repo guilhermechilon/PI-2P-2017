@@ -1,10 +1,9 @@
 <?php
-	session_start();
 	include_once("segurança.php");
-	$id_usuario = $_SESSION['comentario'];
-    $id_usuario = $_GET['id_usuario'];
-    $id_
+	$id_usuario = $_SESSION['id_usuario'];
+	$comentario = $_POST['comentario'];
+	$usuario = $_GET['usuario'];
 
-	mysqli_query($conn,"INSERT INTO `comentario`(`id_coment`, `id_usuario`, `id_post`, 'comentario', 'data_coment') VALUES ('$id_coment', '$id_usuario', '$id_post', '$comentario', '$data_coment')")){
-
+	
+	(mysqli_query($conn,"INSERT INTO `comentario`(`id_usuario`, `id_coment`, 'id_post', `comentario`, 'data_coment') VALUES ('$id_usuario', '$id_coment', '$id_post', '$comentario', '$data_coment')"))
 ?>
