@@ -26,7 +26,7 @@
 		      	<ul class="nav navbar-nav">
 		        	<li style="margin-left: 5px;margin-right: 5px;"><a href="meus_posts.php">Meus Posts</a></li>
 		        	<li style="margin-left: 5px;margin-right: 5px;"><a href="posts_comentados.php">Posts Comentados</a></li>
-					<li style="margin-left: 5px;margin-right: 5px;"><a href="chat.php">Contato</a></li>
+					<li style="margin-left: 5px;margin-right: 5px;"><a href="contato.php">Contato</a></li>
 		      	</ul>
 		      	<?php $sqlmsg = mysqli_query($conn,"SELECT m.id_de FROM mensagens as m WHERE m.visualizado = '1' && m.id_para = '$id_usuario' GROUP BY m.id_de ORDER BY MAX(m.data_hora) DESC"); 
 	    		$nummsg = mysqli_num_rows($sqlmsg);?>
