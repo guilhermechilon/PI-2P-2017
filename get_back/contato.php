@@ -40,7 +40,7 @@
 	                              <input style="border-color: #dc0909;" type="text" class="form-control input-rounded" name="assunto" >
 	                            </div>
 	                          </div>
-                          <textarea class="form-control" name="text" rows="4" style="resize: none;border-color: #dc0909;" placeholder="Digite sua mensagem" required></textarea>
+                          <textarea class="form-control" name="msg" rows="4" style="resize: none;border-color: #dc0909;" placeholder="Digite sua mensagem" required></textarea>
 	                          <div class="form-group" style="text-align: center;">
 	                            <button type="submit" class="btn btn-default" style="border: solid 1px;border-radius: 15px;border-color: #dc0909;background-color: #dc0909;color: white;">Salvar Mudanças</button> 
 	                          </div>
