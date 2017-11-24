@@ -14,7 +14,7 @@
 				<div class="row">
 					<div class="col-md-9 col-sm-9" style="background-image: url(img/wall.jpg);background-attachment: fixed;background-position: center;background-repeat: no-repeat;background-size: cover;height: 100%;">
 						<?php 
-							$sql = mysqli_query($conn,"SELECT DATE_FORMAT(p.data_post, '%d/%m/%Y %H:%i:%s') as data_post,p.id_post,p.id_usuario,p.post,p.img_post,u.nome,u.foto_perfil,u.nome,u.foto_perfil FROM postagem as p INNER JOIN usuario as u ON u.id_usuario = p.id_usuario WHERE p.id_usuario = $id_usuario ORDER BY p.data_post DESC LIMIT 10");
+							$sql = mysqli_query($conn,"SELECT DATE_FORMAT(p.data_post, '%d/%m/%Y %H:%i:%s') as data_post,p.id_post,p.id_usuario,p.post,p.img_post,u.nome,u.foto_perfil FROM postagem as p INNER JOIN usuario as u ON u.id_usuario = p.id_usuario WHERE p.id_usuario = $id_usuario ORDER BY p.data_post DESC");
 						?>
 						<br><br>
 						<div class="col-md-8 col-md-offset-3 col-sm-10 col-sm-offset-2">
@@ -38,7 +38,7 @@
 		                                            <p><?php echo $row->post; ?></p>
 		                                            <div class="timeline-item-post" style="margin: 0;text-align: center;">
 	                                            		<a href="" data-toggle="modal" data-target="#myModal<?php echo $row->id_post; ?>" class="open-AddBookDialog">
-	                                                		<img src="img_post/<?php echo $row->img_post; ?>" style="width: 428.75px;height: 428.75px;">
+	                                                		<img src="img_post/<?php echo $row->img_post; ?>" style="width: 428.75px;height: 428.75px;border-radius: 25px;">
 	                                            		</a>
 		                                            </div>
 		                                        </div>
